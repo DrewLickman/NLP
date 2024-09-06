@@ -1,3 +1,3 @@
 mischievous mischief devious
 execution intention
-TAGCTATCACGACCGCGGTCGATTTGCCCGAC AGGCTATCACCTGACCTCCAGGCCGATGCCC
+tagctatcacgaccgcggtcgatttgcccgac aggctatcacctgacctccaggccgatgccc
