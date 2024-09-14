@@ -1,0 +1,2 @@
+This document is just a sample for testing my n-grams. Hello world, this is my really awesome document that I love writing into. One big long document.
+This is a new line. It should be represented as a separate array in paragraph mode.
