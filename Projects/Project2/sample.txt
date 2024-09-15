@@ -1,2 +1,2 @@
 This document is just a sample. Hello world! This is my really awesome document that I love writing into. One big long document.
-This is a new line. It should be represented as a separate array in paragraph mode.
+This is a new line. It should be represented as a separate array in paragraph mode. This is the end. It should end now.
