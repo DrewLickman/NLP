@@ -1,0 +1,492 @@
+Input file:
+I have a cat. My cat is black.
+A black car almost hit a cat. I have the car license tag.
+
+---------------------------------------- Sentence ----------------------------------------
+['<s>', 'i', 'have', 'a', 'cat', '.', '</s>']
+['<s>', 'my', 'cat', 'is', 'black', '.', '</s>']
+['<s>', 'a', 'black', 'car', 'almost', 'hit', 'a', 'cat', '.', '</s>']
+['<s>', 'i', 'have', 'the', 'car', 'license', 'tag', '.', '</s>']
+
+1-grams: {(): [('<s>',), ('i',), ('have',), ('a',), ('cat',), ('.',), ('</s>',), ('<s>',), ('my',), ('cat',), ('is',), ('black',), ('.',), ('</s>',), ('<s>',), ('a',), ('black',), ('car',), ('almost',), ('hit',), ('a',), ('cat',), ('.',), ('</s>',), ('<s>',), ('i',), ('have',), ('the',), ('car',), ('license',), ('tag',), ('.',), ('</s>',)]}
+
+	(): Counter({('<s>',): 4, ('.',): 4, ('</s>',): 4, ('a',): 3, ('cat',): 3, ('i',): 2, ('have',): 2, ('black',): 2, ('car',): 2, ('my',): 1, ('is',): 1, ('almost',): 1, ('hit',): 1, ('the',): 1, ('license',): 1, ('tag',): 1}), 16
+		Word: ('<s>',)        Occurrences    4    Context total   33    Probability  0.121
+		Word: ('i',)          Occurrences    2    Context total   33    Probability  0.061
+		Word: ('have',)       Occurrences    2    Context total   33    Probability  0.061
+		Word: ('a',)          Occurrences    3    Context total   33    Probability  0.091
+		Word: ('cat',)        Occurrences    3    Context total   33    Probability  0.091
+		Word: ('.',)          Occurrences    4    Context total   33    Probability  0.121
+		Word: ('</s>',)       Occurrences    4    Context total   33    Probability  0.121
+		Word: ('my',)         Occurrences    1    Context total   33    Probability  0.030
+		Word: ('is',)         Occurrences    1    Context total   33    Probability  0.030
+		Word: ('black',)      Occurrences    2    Context total   33    Probability  0.061
+		Word: ('car',)        Occurrences    2    Context total   33    Probability  0.061
+		Word: ('almost',)     Occurrences    1    Context total   33    Probability  0.030
+		Word: ('hit',)        Occurrences    1    Context total   33    Probability  0.030
+		Word: ('the',)        Occurrences    1    Context total   33    Probability  0.030
+		Word: ('license',)    Occurrences    1    Context total   33    Probability  0.030
+		Word: ('tag',)        Occurrences    1    Context total   33    Probability  0.030
+Unique 1-grams: 16
+
+['<s>', 'i', 'have', 'a', 'cat', '.', '</s>']
+['<s>', 'my', 'cat', 'is', 'black', '.', '</s>']
+['<s>', 'a', 'black', 'car', 'almost', 'hit', 'a', 'cat', '.', '</s>']
+['<s>', 'i', 'have', 'the', 'car', 'license', 'tag', '.', '</s>']
+
+2-grams: {('<s>',): [('i',), ('my',), ('a',), ('i',)], ('i',): [('have',), ('have',)], ('have',): [('a',), ('the',)], ('a',): [('cat',), ('black',), ('cat',)], ('cat',): [('.',), ('is',), ('.',)], ('.',): [('</s>',), ('</s>',), ('</s>',), ('</s>',)], ('my',): [('cat',)], ('is',): [('black',)], ('black',): [('.',), ('car',)], ('car',): [('almost',), ('license',)], ('almost',): [('hit',)], ('hit',): [('a',)], ('the',): [('car',)], ('license',): [('tag',)], ('tag',): [('.',)]}
+
+	('<s>',): Counter({('i',): 2, ('my',): 1, ('a',): 1}), 3
+		Word: ('i',)          Occurrences    2    Context total    4    Probability  0.500
+		Word: ('my',)         Occurrences    1    Context total    4    Probability  0.250
+		Word: ('a',)          Occurrences    1    Context total    4    Probability  0.250
+
+	('i',): Counter({('have',): 2}), 1
+		Word: ('have',)       Occurrences    2    Context total    2    Probability  1.000
+
+	('have',): Counter({('a',): 1, ('the',): 1}), 2
+		Word: ('a',)          Occurrences    1    Context total    2    Probability  0.500
+		Word: ('the',)        Occurrences    1    Context total    2    Probability  0.500
+
+	('a',): Counter({('cat',): 2, ('black',): 1}), 2
+		Word: ('cat',)        Occurrences    2    Context total    3    Probability  0.667
+		Word: ('black',)      Occurrences    1    Context total    3    Probability  0.333
+
+	('cat',): Counter({('.',): 2, ('is',): 1}), 2
+		Word: ('.',)          Occurrences    2    Context total    3    Probability  0.667
+		Word: ('is',)         Occurrences    1    Context total    3    Probability  0.333
+
+	('.',): Counter({('</s>',): 4}), 1
+		Word: ('</s>',)       Occurrences    4    Context total    4    Probability  1.000
+
+	('my',): Counter({('cat',): 1}), 1
+		Word: ('cat',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('is',): Counter({('black',): 1}), 1
+		Word: ('black',)      Occurrences    1    Context total    1    Probability  1.000
+
+	('black',): Counter({('.',): 1, ('car',): 1}), 2
+		Word: ('.',)          Occurrences    1    Context total    2    Probability  0.500
+		Word: ('car',)        Occurrences    1    Context total    2    Probability  0.500
+
+	('car',): Counter({('almost',): 1, ('license',): 1}), 2
+		Word: ('almost',)     Occurrences    1    Context total    2    Probability  0.500
+		Word: ('license',)    Occurrences    1    Context total    2    Probability  0.500
+
+	('almost',): Counter({('hit',): 1}), 1
+		Word: ('hit',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('hit',): Counter({('a',): 1}), 1
+		Word: ('a',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('the',): Counter({('car',): 1}), 1
+		Word: ('car',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('license',): Counter({('tag',): 1}), 1
+		Word: ('tag',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('tag',): Counter({('.',): 1}), 1
+		Word: ('.',)          Occurrences    1    Context total    1    Probability  1.000
+Unique 2-grams: 22
+
+['<s>', '<s>', 'i', 'have', 'a', 'cat', '.', '</s>']
+['<s>', '<s>', 'my', 'cat', 'is', 'black', '.', '</s>']
+['<s>', '<s>', 'a', 'black', 'car', 'almost', 'hit', 'a', 'cat', '.', '</s>']
+['<s>', '<s>', 'i', 'have', 'the', 'car', 'license', 'tag', '.', '</s>']
+
+3-grams: {('<s>', '<s>'): [('i',), ('my',), ('a',), ('i',)], ('<s>', 'i'): [('have',), ('have',)], ('i', 'have'): [('a',), ('the',)], ('have', 'a'): [('cat',)], ('a', 'cat'): [('.',), ('.',)], ('cat', '.'): [('</s>',), ('</s>',)], ('<s>', 'my'): [('cat',)], ('my', 'cat'): [('is',)], ('cat', 'is'): [('black',)], ('is', 'black'): [('.',)], ('black', '.'): [('</s>',)], ('<s>', 'a'): [('black',)], ('a', 'black'): [('car',)], ('black', 'car'): [('almost',)], ('car', 'almost'): [('hit',)], ('almost', 'hit'): [('a',)], ('hit', 'a'): [('cat',)], ('have', 'the'): [('car',)], ('the', 'car'): [('license',)], ('car', 'license'): [('tag',)], ('license', 'tag'): [('.',)], ('tag', '.'): [('</s>',)]}
+
+	('<s>', '<s>'): Counter({('i',): 2, ('my',): 1, ('a',): 1}), 3
+		Word: ('i',)          Occurrences    2    Context total    4    Probability  0.500
+		Word: ('my',)         Occurrences    1    Context total    4    Probability  0.250
+		Word: ('a',)          Occurrences    1    Context total    4    Probability  0.250
+
+	('<s>', 'i'): Counter({('have',): 2}), 1
+		Word: ('have',)       Occurrences    2    Context total    2    Probability  1.000
+
+	('i', 'have'): Counter({('a',): 1, ('the',): 1}), 2
+		Word: ('a',)          Occurrences    1    Context total    2    Probability  0.500
+		Word: ('the',)        Occurrences    1    Context total    2    Probability  0.500
+
+	('have', 'a'): Counter({('cat',): 1}), 1
+		Word: ('cat',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('a', 'cat'): Counter({('.',): 2}), 1
+		Word: ('.',)          Occurrences    2    Context total    2    Probability  1.000
+
+	('cat', '.'): Counter({('</s>',): 2}), 1
+		Word: ('</s>',)       Occurrences    2    Context total    2    Probability  1.000
+
+	('<s>', 'my'): Counter({('cat',): 1}), 1
+		Word: ('cat',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('my', 'cat'): Counter({('is',): 1}), 1
+		Word: ('is',)         Occurrences    1    Context total    1    Probability  1.000
+
+	('cat', 'is'): Counter({('black',): 1}), 1
+		Word: ('black',)      Occurrences    1    Context total    1    Probability  1.000
+
+	('is', 'black'): Counter({('.',): 1}), 1
+		Word: ('.',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('black', '.'): Counter({('</s>',): 1}), 1
+		Word: ('</s>',)       Occurrences    1    Context total    1    Probability  1.000
+
+	('<s>', 'a'): Counter({('black',): 1}), 1
+		Word: ('black',)      Occurrences    1    Context total    1    Probability  1.000
+
+	('a', 'black'): Counter({('car',): 1}), 1
+		Word: ('car',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('black', 'car'): Counter({('almost',): 1}), 1
+		Word: ('almost',)     Occurrences    1    Context total    1    Probability  1.000
+
+	('car', 'almost'): Counter({('hit',): 1}), 1
+		Word: ('hit',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('almost', 'hit'): Counter({('a',): 1}), 1
+		Word: ('a',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('hit', 'a'): Counter({('cat',): 1}), 1
+		Word: ('cat',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('have', 'the'): Counter({('car',): 1}), 1
+		Word: ('car',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('the', 'car'): Counter({('license',): 1}), 1
+		Word: ('license',)    Occurrences    1    Context total    1    Probability  1.000
+
+	('car', 'license'): Counter({('tag',): 1}), 1
+		Word: ('tag',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('license', 'tag'): Counter({('.',): 1}), 1
+		Word: ('.',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('tag', '.'): Counter({('</s>',): 1}), 1
+		Word: ('</s>',)       Occurrences    1    Context total    1    Probability  1.000
+Unique 3-grams: 25
+
+['<s>', '<s>', '<s>', 'i', 'have', 'a', 'cat', '.', '</s>']
+['<s>', '<s>', '<s>', 'my', 'cat', 'is', 'black', '.', '</s>']
+['<s>', '<s>', '<s>', 'a', 'black', 'car', 'almost', 'hit', 'a', 'cat', '.', '</s>']
+['<s>', '<s>', '<s>', 'i', 'have', 'the', 'car', 'license', 'tag', '.', '</s>']
+
+4-grams: {('<s>', '<s>', '<s>'): [('i',), ('my',), ('a',), ('i',)], ('<s>', '<s>', 'i'): [('have',), ('have',)], ('<s>', 'i', 'have'): [('a',), ('the',)], ('i', 'have', 'a'): [('cat',)], ('have', 'a', 'cat'): [('.',)], ('a', 'cat', '.'): [('</s>',), ('</s>',)], ('<s>', '<s>', 'my'): [('cat',)], ('<s>', 'my', 'cat'): [('is',)], ('my', 'cat', 'is'): [('black',)], ('cat', 'is', 'black'): [('.',)], ('is', 'black', '.'): [('</s>',)], ('<s>', '<s>', 'a'): [('black',)], ('<s>', 'a', 'black'): [('car',)], ('a', 'black', 'car'): [('almost',)], ('black', 'car', 'almost'): [('hit',)], ('car', 'almost', 'hit'): [('a',)], ('almost', 'hit', 'a'): [('cat',)], ('hit', 'a', 'cat'): [('.',)], ('i', 'have', 'the'): [('car',)], ('have', 'the', 'car'): [('license',)], ('the', 'car', 'license'): [('tag',)], ('car', 'license', 'tag'): [('.',)], ('license', 'tag', '.'): [('</s>',)]}
+
+	('<s>', '<s>', '<s>'): Counter({('i',): 2, ('my',): 1, ('a',): 1}), 3
+		Word: ('i',)          Occurrences    2    Context total    4    Probability  0.500
+		Word: ('my',)         Occurrences    1    Context total    4    Probability  0.250
+		Word: ('a',)          Occurrences    1    Context total    4    Probability  0.250
+
+	('<s>', '<s>', 'i'): Counter({('have',): 2}), 1
+		Word: ('have',)       Occurrences    2    Context total    2    Probability  1.000
+
+	('<s>', 'i', 'have'): Counter({('a',): 1, ('the',): 1}), 2
+		Word: ('a',)          Occurrences    1    Context total    2    Probability  0.500
+		Word: ('the',)        Occurrences    1    Context total    2    Probability  0.500
+
+	('i', 'have', 'a'): Counter({('cat',): 1}), 1
+		Word: ('cat',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('have', 'a', 'cat'): Counter({('.',): 1}), 1
+		Word: ('.',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('a', 'cat', '.'): Counter({('</s>',): 2}), 1
+		Word: ('</s>',)       Occurrences    2    Context total    2    Probability  1.000
+
+	('<s>', '<s>', 'my'): Counter({('cat',): 1}), 1
+		Word: ('cat',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('<s>', 'my', 'cat'): Counter({('is',): 1}), 1
+		Word: ('is',)         Occurrences    1    Context total    1    Probability  1.000
+
+	('my', 'cat', 'is'): Counter({('black',): 1}), 1
+		Word: ('black',)      Occurrences    1    Context total    1    Probability  1.000
+
+	('cat', 'is', 'black'): Counter({('.',): 1}), 1
+		Word: ('.',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('is', 'black', '.'): Counter({('</s>',): 1}), 1
+		Word: ('</s>',)       Occurrences    1    Context total    1    Probability  1.000
+
+	('<s>', '<s>', 'a'): Counter({('black',): 1}), 1
+		Word: ('black',)      Occurrences    1    Context total    1    Probability  1.000
+
+	('<s>', 'a', 'black'): Counter({('car',): 1}), 1
+		Word: ('car',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('a', 'black', 'car'): Counter({('almost',): 1}), 1
+		Word: ('almost',)     Occurrences    1    Context total    1    Probability  1.000
+
+	('black', 'car', 'almost'): Counter({('hit',): 1}), 1
+		Word: ('hit',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('car', 'almost', 'hit'): Counter({('a',): 1}), 1
+		Word: ('a',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('almost', 'hit', 'a'): Counter({('cat',): 1}), 1
+		Word: ('cat',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('hit', 'a', 'cat'): Counter({('.',): 1}), 1
+		Word: ('.',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('i', 'have', 'the'): Counter({('car',): 1}), 1
+		Word: ('car',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('have', 'the', 'car'): Counter({('license',): 1}), 1
+		Word: ('license',)    Occurrences    1    Context total    1    Probability  1.000
+
+	('the', 'car', 'license'): Counter({('tag',): 1}), 1
+		Word: ('tag',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('car', 'license', 'tag'): Counter({('.',): 1}), 1
+		Word: ('.',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('license', 'tag', '.'): Counter({('</s>',): 1}), 1
+		Word: ('</s>',)       Occurrences    1    Context total    1    Probability  1.000
+Unique 4-grams: 26
+
+---------------------------------------- Paragraph ----------------------------------------
+['<s>', 'i', 'have', 'a', 'cat', '.', 'my', 'cat', 'is', 'black', '.', '</s>']
+['<s>', 'a', 'black', 'car', 'almost', 'hit', 'a', 'cat', '.', 'i', 'have', 'the', 'car', 'license', 'tag', '.', '</s>']
+
+1-grams: {(): [('<s>',), ('i',), ('have',), ('a',), ('cat',), ('.',), ('my',), ('cat',), ('is',), ('black',), ('.',), ('</s>',), ('<s>',), ('a',), ('black',), ('car',), ('almost',), ('hit',), ('a',), ('cat',), ('.',), ('i',), ('have',), ('the',), ('car',), ('license',), ('tag',), ('.',), ('</s>',)]}
+
+	(): Counter({('.',): 4, ('a',): 3, ('cat',): 3, ('<s>',): 2, ('i',): 2, ('have',): 2, ('black',): 2, ('</s>',): 2, ('car',): 2, ('my',): 1, ('is',): 1, ('almost',): 1, ('hit',): 1, ('the',): 1, ('license',): 1, ('tag',): 1}), 16
+		Word: ('<s>',)        Occurrences    2    Context total   29    Probability  0.069
+		Word: ('i',)          Occurrences    2    Context total   29    Probability  0.069
+		Word: ('have',)       Occurrences    2    Context total   29    Probability  0.069
+		Word: ('a',)          Occurrences    3    Context total   29    Probability  0.103
+		Word: ('cat',)        Occurrences    3    Context total   29    Probability  0.103
+		Word: ('.',)          Occurrences    4    Context total   29    Probability  0.138
+		Word: ('my',)         Occurrences    1    Context total   29    Probability  0.034
+		Word: ('is',)         Occurrences    1    Context total   29    Probability  0.034
+		Word: ('black',)      Occurrences    2    Context total   29    Probability  0.069
+		Word: ('</s>',)       Occurrences    2    Context total   29    Probability  0.069
+		Word: ('car',)        Occurrences    2    Context total   29    Probability  0.069
+		Word: ('almost',)     Occurrences    1    Context total   29    Probability  0.034
+		Word: ('hit',)        Occurrences    1    Context total   29    Probability  0.034
+		Word: ('the',)        Occurrences    1    Context total   29    Probability  0.034
+		Word: ('license',)    Occurrences    1    Context total   29    Probability  0.034
+		Word: ('tag',)        Occurrences    1    Context total   29    Probability  0.034
+Unique 1-grams: 16
+
+['<s>', 'i', 'have', 'a', 'cat', '.', 'my', 'cat', 'is', 'black', '.', '</s>']
+['<s>', 'a', 'black', 'car', 'almost', 'hit', 'a', 'cat', '.', 'i', 'have', 'the', 'car', 'license', 'tag', '.', '</s>']
+
+2-grams: {('<s>',): [('i',), ('a',)], ('i',): [('have',), ('have',)], ('have',): [('a',), ('the',)], ('a',): [('cat',), ('black',), ('cat',)], ('cat',): [('.',), ('is',), ('.',)], ('.',): [('my',), ('</s>',), ('i',), ('</s>',)], ('my',): [('cat',)], ('is',): [('black',)], ('black',): [('.',), ('car',)], ('car',): [('almost',), ('license',)], ('almost',): [('hit',)], ('hit',): [('a',)], ('the',): [('car',)], ('license',): [('tag',)], ('tag',): [('.',)]}
+
+	('<s>',): Counter({('i',): 1, ('a',): 1}), 2
+		Word: ('i',)          Occurrences    1    Context total    2    Probability  0.500
+		Word: ('a',)          Occurrences    1    Context total    2    Probability  0.500
+
+	('i',): Counter({('have',): 2}), 1
+		Word: ('have',)       Occurrences    2    Context total    2    Probability  1.000
+
+	('have',): Counter({('a',): 1, ('the',): 1}), 2
+		Word: ('a',)          Occurrences    1    Context total    2    Probability  0.500
+		Word: ('the',)        Occurrences    1    Context total    2    Probability  0.500
+
+	('a',): Counter({('cat',): 2, ('black',): 1}), 2
+		Word: ('cat',)        Occurrences    2    Context total    3    Probability  0.667
+		Word: ('black',)      Occurrences    1    Context total    3    Probability  0.333
+
+	('cat',): Counter({('.',): 2, ('is',): 1}), 2
+		Word: ('.',)          Occurrences    2    Context total    3    Probability  0.667
+		Word: ('is',)         Occurrences    1    Context total    3    Probability  0.333
+
+	('.',): Counter({('</s>',): 2, ('my',): 1, ('i',): 1}), 3
+		Word: ('my',)         Occurrences    1    Context total    4    Probability  0.250
+		Word: ('</s>',)       Occurrences    2    Context total    4    Probability  0.500
+		Word: ('i',)          Occurrences    1    Context total    4    Probability  0.250
+
+	('my',): Counter({('cat',): 1}), 1
+		Word: ('cat',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('is',): Counter({('black',): 1}), 1
+		Word: ('black',)      Occurrences    1    Context total    1    Probability  1.000
+
+	('black',): Counter({('.',): 1, ('car',): 1}), 2
+		Word: ('.',)          Occurrences    1    Context total    2    Probability  0.500
+		Word: ('car',)        Occurrences    1    Context total    2    Probability  0.500
+
+	('car',): Counter({('almost',): 1, ('license',): 1}), 2
+		Word: ('almost',)     Occurrences    1    Context total    2    Probability  0.500
+		Word: ('license',)    Occurrences    1    Context total    2    Probability  0.500
+
+	('almost',): Counter({('hit',): 1}), 1
+		Word: ('hit',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('hit',): Counter({('a',): 1}), 1
+		Word: ('a',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('the',): Counter({('car',): 1}), 1
+		Word: ('car',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('license',): Counter({('tag',): 1}), 1
+		Word: ('tag',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('tag',): Counter({('.',): 1}), 1
+		Word: ('.',)          Occurrences    1    Context total    1    Probability  1.000
+Unique 2-grams: 23
+
+['<s>', '<s>', 'i', 'have', 'a', 'cat', '.', 'my', 'cat', 'is', 'black', '.', '</s>']
+['<s>', '<s>', 'a', 'black', 'car', 'almost', 'hit', 'a', 'cat', '.', 'i', 'have', 'the', 'car', 'license', 'tag', '.', '</s>']
+
+3-grams: {('<s>', '<s>'): [('i',), ('a',)], ('<s>', 'i'): [('have',)], ('i', 'have'): [('a',), ('the',)], ('have', 'a'): [('cat',)], ('a', 'cat'): [('.',), ('.',)], ('cat', '.'): [('my',), ('i',)], ('.', 'my'): [('cat',)], ('my', 'cat'): [('is',)], ('cat', 'is'): [('black',)], ('is', 'black'): [('.',)], ('black', '.'): [('</s>',)], ('<s>', 'a'): [('black',)], ('a', 'black'): [('car',)], ('black', 'car'): [('almost',)], ('car', 'almost'): [('hit',)], ('almost', 'hit'): [('a',)], ('hit', 'a'): [('cat',)], ('.', 'i'): [('have',)], ('have', 'the'): [('car',)], ('the', 'car'): [('license',)], ('car', 'license'): [('tag',)], ('license', 'tag'): [('.',)], ('tag', '.'): [('</s>',)]}
+
+	('<s>', '<s>'): Counter({('i',): 1, ('a',): 1}), 2
+		Word: ('i',)          Occurrences    1    Context total    2    Probability  0.500
+		Word: ('a',)          Occurrences    1    Context total    2    Probability  0.500
+
+	('<s>', 'i'): Counter({('have',): 1}), 1
+		Word: ('have',)       Occurrences    1    Context total    1    Probability  1.000
+
+	('i', 'have'): Counter({('a',): 1, ('the',): 1}), 2
+		Word: ('a',)          Occurrences    1    Context total    2    Probability  0.500
+		Word: ('the',)        Occurrences    1    Context total    2    Probability  0.500
+
+	('have', 'a'): Counter({('cat',): 1}), 1
+		Word: ('cat',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('a', 'cat'): Counter({('.',): 2}), 1
+		Word: ('.',)          Occurrences    2    Context total    2    Probability  1.000
+
+	('cat', '.'): Counter({('my',): 1, ('i',): 1}), 2
+		Word: ('my',)         Occurrences    1    Context total    2    Probability  0.500
+		Word: ('i',)          Occurrences    1    Context total    2    Probability  0.500
+
+	('.', 'my'): Counter({('cat',): 1}), 1
+		Word: ('cat',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('my', 'cat'): Counter({('is',): 1}), 1
+		Word: ('is',)         Occurrences    1    Context total    1    Probability  1.000
+
+	('cat', 'is'): Counter({('black',): 1}), 1
+		Word: ('black',)      Occurrences    1    Context total    1    Probability  1.000
+
+	('is', 'black'): Counter({('.',): 1}), 1
+		Word: ('.',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('black', '.'): Counter({('</s>',): 1}), 1
+		Word: ('</s>',)       Occurrences    1    Context total    1    Probability  1.000
+
+	('<s>', 'a'): Counter({('black',): 1}), 1
+		Word: ('black',)      Occurrences    1    Context total    1    Probability  1.000
+
+	('a', 'black'): Counter({('car',): 1}), 1
+		Word: ('car',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('black', 'car'): Counter({('almost',): 1}), 1
+		Word: ('almost',)     Occurrences    1    Context total    1    Probability  1.000
+
+	('car', 'almost'): Counter({('hit',): 1}), 1
+		Word: ('hit',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('almost', 'hit'): Counter({('a',): 1}), 1
+		Word: ('a',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('hit', 'a'): Counter({('cat',): 1}), 1
+		Word: ('cat',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('.', 'i'): Counter({('have',): 1}), 1
+		Word: ('have',)       Occurrences    1    Context total    1    Probability  1.000
+
+	('have', 'the'): Counter({('car',): 1}), 1
+		Word: ('car',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('the', 'car'): Counter({('license',): 1}), 1
+		Word: ('license',)    Occurrences    1    Context total    1    Probability  1.000
+
+	('car', 'license'): Counter({('tag',): 1}), 1
+		Word: ('tag',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('license', 'tag'): Counter({('.',): 1}), 1
+		Word: ('.',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('tag', '.'): Counter({('</s>',): 1}), 1
+		Word: ('</s>',)       Occurrences    1    Context total    1    Probability  1.000
+Unique 3-grams: 26
+
+['<s>', '<s>', '<s>', 'i', 'have', 'a', 'cat', '.', 'my', 'cat', 'is', 'black', '.', '</s>']
+['<s>', '<s>', '<s>', 'a', 'black', 'car', 'almost', 'hit', 'a', 'cat', '.', 'i', 'have', 'the', 'car', 'license', 'tag', '.', '</s>']
+
+4-grams: {('<s>', '<s>', '<s>'): [('i',), ('a',)], ('<s>', '<s>', 'i'): [('have',)], ('<s>', 'i', 'have'): [('a',)], ('i', 'have', 'a'): [('cat',)], ('have', 'a', 'cat'): [('.',)], ('a', 'cat', '.'): [('my',), ('i',)], ('cat', '.', 'my'): [('cat',)], ('.', 'my', 'cat'): [('is',)], ('my', 'cat', 'is'): [('black',)], ('cat', 'is', 'black'): [('.',)], ('is', 'black', '.'): [('</s>',)], ('<s>', '<s>', 'a'): [('black',)], ('<s>', 'a', 'black'): [('car',)], ('a', 'black', 'car'): [('almost',)], ('black', 'car', 'almost'): [('hit',)], ('car', 'almost', 'hit'): [('a',)], ('almost', 'hit', 'a'): [('cat',)], ('hit', 'a', 'cat'): [('.',)], ('cat', '.', 'i'): [('have',)], ('.', 'i', 'have'): [('the',)], ('i', 'have', 'the'): [('car',)], ('have', 'the', 'car'): [('license',)], ('the', 'car', 'license'): [('tag',)], ('car', 'license', 'tag'): [('.',)], ('license', 'tag', '.'): [('</s>',)]}
+
+	('<s>', '<s>', '<s>'): Counter({('i',): 1, ('a',): 1}), 2
+		Word: ('i',)          Occurrences    1    Context total    2    Probability  0.500
+		Word: ('a',)          Occurrences    1    Context total    2    Probability  0.500
+
+	('<s>', '<s>', 'i'): Counter({('have',): 1}), 1
+		Word: ('have',)       Occurrences    1    Context total    1    Probability  1.000
+
+	('<s>', 'i', 'have'): Counter({('a',): 1}), 1
+		Word: ('a',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('i', 'have', 'a'): Counter({('cat',): 1}), 1
+		Word: ('cat',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('have', 'a', 'cat'): Counter({('.',): 1}), 1
+		Word: ('.',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('a', 'cat', '.'): Counter({('my',): 1, ('i',): 1}), 2
+		Word: ('my',)         Occurrences    1    Context total    2    Probability  0.500
+		Word: ('i',)          Occurrences    1    Context total    2    Probability  0.500
+
+	('cat', '.', 'my'): Counter({('cat',): 1}), 1
+		Word: ('cat',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('.', 'my', 'cat'): Counter({('is',): 1}), 1
+		Word: ('is',)         Occurrences    1    Context total    1    Probability  1.000
+
+	('my', 'cat', 'is'): Counter({('black',): 1}), 1
+		Word: ('black',)      Occurrences    1    Context total    1    Probability  1.000
+
+	('cat', 'is', 'black'): Counter({('.',): 1}), 1
+		Word: ('.',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('is', 'black', '.'): Counter({('</s>',): 1}), 1
+		Word: ('</s>',)       Occurrences    1    Context total    1    Probability  1.000
+
+	('<s>', '<s>', 'a'): Counter({('black',): 1}), 1
+		Word: ('black',)      Occurrences    1    Context total    1    Probability  1.000
+
+	('<s>', 'a', 'black'): Counter({('car',): 1}), 1
+		Word: ('car',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('a', 'black', 'car'): Counter({('almost',): 1}), 1
+		Word: ('almost',)     Occurrences    1    Context total    1    Probability  1.000
+
+	('black', 'car', 'almost'): Counter({('hit',): 1}), 1
+		Word: ('hit',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('car', 'almost', 'hit'): Counter({('a',): 1}), 1
+		Word: ('a',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('almost', 'hit', 'a'): Counter({('cat',): 1}), 1
+		Word: ('cat',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('hit', 'a', 'cat'): Counter({('.',): 1}), 1
+		Word: ('.',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('cat', '.', 'i'): Counter({('have',): 1}), 1
+		Word: ('have',)       Occurrences    1    Context total    1    Probability  1.000
+
+	('.', 'i', 'have'): Counter({('the',): 1}), 1
+		Word: ('the',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('i', 'have', 'the'): Counter({('car',): 1}), 1
+		Word: ('car',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('have', 'the', 'car'): Counter({('license',): 1}), 1
+		Word: ('license',)    Occurrences    1    Context total    1    Probability  1.000
+
+	('the', 'car', 'license'): Counter({('tag',): 1}), 1
+		Word: ('tag',)        Occurrences    1    Context total    1    Probability  1.000
+
+	('car', 'license', 'tag'): Counter({('.',): 1}), 1
+		Word: ('.',)          Occurrences    1    Context total    1    Probability  1.000
+
+	('license', 'tag', '.'): Counter({('</s>',): 1}), 1
+		Word: ('</s>',)       Occurrences    1    Context total    1    Probability  1.000
+Unique 4-grams: 27
