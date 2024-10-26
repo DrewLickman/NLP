@@ -1,0 +1,22 @@
+RNN: 31.13%
+RNN: 34.43%
+GRU: 62.97%
+GRU 128 hidden dims: 68.40%
+GRU 128 hidden dims, 2 n_layers: 78.54%
+GRU 128 hidden dims, 3 n_layers: 75.00%
+GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate: 75.71%
+GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional: 83.96%
+GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional: 85.38%
+GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional: 86.56%
+GRU 64 hidden dims, 3 n_layers, 0.2 dropout_rate, True bidirectional: 75.47%
+GRU 32 hidden dims, 4 n_layers, 0.2 dropout_rate, True bidirectional: 80.42%
+GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size: 87.97%
+GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 16 batch_size: 81.84%
+GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 2 batch_size: 83.73%
+GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, None emb: 70.99%
+GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, None emb, False freeze: 72.17%
+GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size: 90.09%
+GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 50% training: 72.83%
+GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 99% training: 90.91%
+GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 90% training, 128 max_len: 79.72%
+GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 90% training, 256 max_len: 83.96%
