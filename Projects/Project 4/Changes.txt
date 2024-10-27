@@ -1,0 +1,9 @@
+GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 99% splitPercent, True ReLU: 95.45%
+Changes:
+RNN -> GRU
+Test split 50% -> 99%
+Hidden dimensions: 64 -> 128
+n_layers: 1 -> 2
+Bidirectional: False -> True
+Batch size: 8 -> 4
+Added ReLU layer
