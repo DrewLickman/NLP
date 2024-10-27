@@ -37,3 +37,9 @@ GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_s
 GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 99% splitPercent, True ReLU: 81.82%
 GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 99% splitPercent, True ReLU: 63.64%
 GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 95% splitPercent, True ReLU: 92.45%
+GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 95% splitPercent, True ReLU, True Attention: 78.30%
+GRU 64 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 95% splitPercent, True ReLU, True Attention: 83.02%
+GRU 64 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 8 batch_size, 95% splitPercent, True ReLU, True Attention: 74.53%
+GRU 64 hidden dims, 3 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 95% splitPercent, True ReLU, True Attention: 81.13%
+GRU 64 hidden dims, 2 n_layers, 0.3 dropout_rate, True bidirectional, 4 batch_size, 95% splitPercent, True ReLU, True Attention: 82.08%
+RNN 64 hidden dims, 2 n_layers, 0.3 dropout_rate, True bidirectional, 4 batch_size, 95% splitPercent, True ReLU, True Attention: 63.21%
