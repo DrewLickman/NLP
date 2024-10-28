@@ -7,3 +7,4 @@ n_layers: 1 -> 2
 Bidirectional: False -> True
 Batch size: 8 -> 4
 Added ReLU layer
+Padding max -> avg
