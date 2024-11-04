@@ -82,3 +82,21 @@ GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_s
 GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 99% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 86.36%
 GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 99% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 86.36%
 GRU 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 99% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 95.45%
+LSTM 128 hidden dims, 1 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 80% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 85.85%
+LSTM 128 hidden dims, 1 n_layers, 0.5 dropout_rate, True bidirectional, 4 batch_size, 80% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 83.96%
+LSTM 128 hidden dims, 1 n_layers, 0.5 dropout_rate, True bidirectional, 4 batch_size, 80% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 85.85%
+LSTM 128 hidden dims, 1 n_layers, 0.5 dropout_rate, True bidirectional, 32 batch_size, 80% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 58.02%
+LSTM 128 hidden dims, 1 n_layers, 0.5 dropout_rate, True bidirectional, 16 batch_size, 80% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 67.22%
+LSTM 128 hidden dims, 1 n_layers, 0.5 dropout_rate, True bidirectional, 8 batch_size, 80% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 83.25%
+LSTM 128 hidden dims, 1 n_layers, 0.0 dropout_rate, True bidirectional, 8 batch_size, 80% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 76.06%
+LSTM 128 hidden dims, 1 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 80% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 83.49%
+LSTM 128 hidden dims, 1 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 80% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding, 5e-1 rnn_lr: 39.86%
+LSTM 128 hidden dims, 1 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 80% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding, 5e-8 rnn_lr: 0.00%
+LSTM 128 hidden dims, 1 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 80% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 86.56%
+LSTM 128 hidden dims, 1 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 85% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 89.31%
+LSTM 128 hidden dims, 2 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 85% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 71.70%
+LSTM 128 hidden dims, 1 n_layers, 0.25 dropout_rate, True bidirectional, 4 batch_size, 85% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 84.59%
+LSTM 128 hidden dims, 1 n_layers, 0.15 dropout_rate, True bidirectional, 4 batch_size, 85% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 75.47%
+LSTM 128 hidden dims, 1 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 90% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 91.98%
+LSTM 128 hidden dims, 1 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 90% trainSplitPercent, 50% validationSplitPercent, True x2 ReLU, average padding: 89.62%
+LSTM 128 hidden dims, 1 n_layers, 0.2 dropout_rate, True bidirectional, 4 batch_size, 90% trainSplitPercent, 50% validationSplitPercent, True ReLU, average padding: 89.62%
