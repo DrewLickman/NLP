@@ -9,3 +9,4 @@ all beginnings & endings sorting examples: 	1	0.183800	0.182434	0.721977	0.76182
 all beginnings & endings sorting examples: 	1	0.180900	0.178904	0.731830	0.767832	0.749399	0.939831
 all beginnings & endings sorting examples: 	1	0.185600	0.180470	0.740060	0.775538	0.757384	0.942394
 all beginnings & endings sorting examples: 	1	0.191000	0.185465	0.716640	0.759857	0.737616	0.939271
+all beginnings & endings sorting examples: 	1	0.188900	0.183920	0.721996	0.763530	0.742183	0.940125
