@@ -1,7 +1,11 @@
-Note	Epoch	Training Loss	Validation Loss	Precision	Recall	F1		Accuracy
-default:	1	0.134500	0.124623	0.823550	0.855424	0.839184	0.964296
-default:	1	0.141100	0.130110	0.807950	0.843211	0.825204	0.962323
-M/F tags:	1	0.142800	0.131742	0.809442	0.842223	0.825507	0.962352
-names ending with 'a' tagged as female: 1	0.171800	0.157322	0.786921	0.819912	0.803078	0.954634
-m/f beginnings & endings: 1	0.169600	0.161059	0.784449	0.814788	0.799331	0.953426
-m/f beginnings & endings: 1	0.183100	0.178627	0.743375	0.780190	0.761338	0.943543
+Note										Epoch Training Loss	Validation Loss	Precision Recall	F1		Accuracy
+default:									1	0.134500	0.124623	0.823550	0.855424	0.839184	0.964296
+default:									1	0.141100	0.130110	0.807950	0.843211	0.825204	0.962323
+M/F tags (not sorted yet):					1	0.142800	0.131742	0.809442	0.842223	0.825507	0.962352
+only names ending with 'a' tagged as female:1	0.171800	0.157322	0.786921	0.819912	0.803078	0.954634
+m/f beginnings & endings: 					1	0.169600	0.161059	0.784449	0.814788	0.799331	0.953426
+m/f beginnings & endings: 					1	0.183100	0.178627	0.743375	0.780190	0.761338	0.943543
+all beginnings & endings sorting examples: 	1	0.183800	0.182434	0.721977	0.761828	0.741367	0.940405
+all beginnings & endings sorting examples: 	1	0.180900	0.178904	0.731830	0.767832	0.749399	0.939831
+all beginnings & endings sorting examples: 	1	0.185600	0.180470	0.740060	0.775538	0.757384	0.942394
+all beginnings & endings sorting examples: 	1	0.191000	0.185465	0.716640	0.759857	0.737616	0.939271
