@@ -105,7 +105,7 @@ def main():
         pdf_url = get_transcript_pdf_url(page_url)
         if pdf_url:
             pdf_urls.append(pdf_url)
-        time.sleep(1)  # Be nice to the server
+        time.sleep(0.1)  # Be nice to the server
     
     if not pdf_urls:
         print("No transcript PDFs found!")
