@@ -128,7 +128,11 @@ def batch_convert_pdfs(
         txt_file = os.path.splitext(pdf_file)[0] + '.txt'
         txt_path = os.path.join(output_dir, txt_file)
         
-        #logging.info(f"Converting {pdf_file} to text")
+        # Skip if text file already exists
+        if os.path.exists(txt_path):
+            logging.info(f"Skipping {txt_file} (already exists)")
+            continue
+            
         try:
             extract_text_from_pdf(pdf_path, txt_path, clean_fomc=clean_fomc)
             logging.info(f"Successfully generated {txt_file}")
